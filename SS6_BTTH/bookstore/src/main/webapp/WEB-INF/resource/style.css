@@ -1,0 +1,15 @@
+.highlight-row {
+    background-color: #ffcccc;
+    color: #cc0000;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
