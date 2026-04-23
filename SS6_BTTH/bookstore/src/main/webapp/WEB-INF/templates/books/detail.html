@@ -9,7 +9,7 @@
     <h2>Thông tin chi tiết</h2>
     <div th:if="${book != null}" style="border: 1px solid #ccc; padding: 20px; border-radius: 5px;">
         <p><strong>Mã ID:</strong> <span th:text="${book.id}"></span></p>
-        <p><strong>Tên Sách:</strong> <span th:text="${book.name}"></span></p>
+        <p><strong>Tên Sách:</strong> <span th:text="${book.title}"></span></p>
         <p><strong>Tác Giả:</strong> <span th:text="${book.author}"></span></p>
         <p><strong>Giá Bán:</strong> <span th:text="${#numbers.formatDecimal(book.price, 0, 'COMMA', 0, 'POINT')} + ' VNĐ'"></span></p>
         <br/>
