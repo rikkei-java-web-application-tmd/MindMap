@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thêm mới Voucher</title>
+</head>
+<body>
+<h2>Đăng ký Mã Khuyến Mãi</h2>
+
+<form th:action="@{/merchant/voucher/save}" th:object="${voucher}" method="POST">
+    <p>
+        <label>Mã code:</label><br>
+        <input type="text" th:field="*{voucherCode}" />
+    </p>
+    <p>
+        <label>Số tiền giảm:</label><br>
+        <input type="number" th:field="*{discountAmount}" />
+    </p>
+    <p>
+        <input type="checkbox" th:field="*{active}" />
+        <label>Áp dụng ngay (Active)</label>
+    </p>
+    <button type="submit">Lưu Voucher</button>
+</form>
+</body>
+</html>
